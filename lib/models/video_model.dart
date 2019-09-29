@@ -37,7 +37,7 @@ class VideoProvider with ChangeNotifier {
 
   Future<void> getVideo(String requestKeyword) async {
     final keyword = 'ustadz ' + requestKeyword;
-    final apiToken = 'AIzaSyDw0zwuxlYBhkKy5dG96SGkrH0KNDh_0HQ';
+    final apiToken = 'API TOKEN';
     final url =
         'https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&relevanceLanguage=id&maxResults=25&q=$keyword&type=video&key=$apiToken';
     final response = await http.get(url);
